@@ -16,29 +16,33 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="noteModalLabel">Edit Note</h5>
+                <h5 class="modal-title" id="noteModalLabel">Create or Edit Note</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <input type="text" class="form-control mb-3" id="noteTitle" placeholder="Note Title">
                 <div id="editor" style="height: 300px;"></div>
                 <div class="mt-3">
+                    <h6>Categories:</h6>
+                    <ul id="categoriesList" class="list-group mb-3"></ul>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="newCategory" placeholder="New Category">
+                        <button class="btn btn-outline-secondary" type="button" id="addCategoryBtn">Add Category</button>
+                    </div>
+                </div>
+                <div class="mt-3">
                     <h6>Subcategories:</h6>
-                    <ul id="subcategoriesList"></ul>
+                    <ul id="subcategoriesList" class="list-group mb-3"></ul>
                     <div class="input-group">
                         <input type="text" class="form-control" id="newSubcategory" placeholder="New Subcategory">
-                        <button class="btn btn-outline-secondary" type="button" id="addSubcategoryBtn">Add</button>
+                        <button class="btn btn-outline-secondary" type="button" id="addSubcategoryBtn">Add Subcategory</button>
                     </div>
                 </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" id="saveNoteBtn">Save changes</button>
+                <button type="button" class="btn btn-primary" id="saveNoteBtn">Save Note</button>
             </div>
         </div>
     </div>
 </div>
-
-
-
-<script src="/js/quill.js"></script>

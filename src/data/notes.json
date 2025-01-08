@@ -1,0 +1,12 @@
+{
+    "categories": {
+        "personal": [
+            {
+                "title": "Sample Note",
+                "content": "This is the content of the sample note.",
+                "subcategories": ["Subcategory 1", "Subcategory 2"],
+                "lastEdited": "01/01/2023, 10:00 AM"
+            }
+        ]
+    }
+}
